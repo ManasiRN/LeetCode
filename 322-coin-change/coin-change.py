@@ -7,5 +7,7 @@ class Solution(object):
             for coin in coins:
                 if coin <= x:
                     dp[x] = min(dp[x],1+dp[x - coin])
-        return dp[amount] if dp[amount] != float('inf') else -1            
+        return dp[amount] if dp[amount] != float('inf') else -1           
+        
+         
         
